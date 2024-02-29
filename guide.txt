@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------------------
+FOR DEXIE/INDEXDB
+1. Before you start anything, you need to install dexie into your project,
+    type "npm install dexie" in the cmd
+2. Refer to slide 8 of week 37 on how to set up a Dexie class
+3. It's advisable to have the dexie class as a service
+4. Then set up the database in the constructor
+5. That's it for the set up. you can start adding methods to add data or call data
+6. Do note that if you want to change anything in the database you need to update a new version
+7. To get all the items, use this.table.toArray(), which returns a PROMISE of the type of your table
+
+--------------------------------------------------------------------------------------------
+FOR COMPONENT STORE
+1. Start with ng add @ngrx/component-store
+2. Then set it up using the constructor
+3. You will need 2 interfaces: 1 for the item you want to access, 1 for a slice, which is an array of the item
+4. In the component store service class, have a init state, before the injectable annotation
+5. For the constructor, all you need is super(INIT_STATE)
+6. Just follow the syntax to add and read stuff in the component store
+7. See the code here for a more detailed description of how it's supposed to work
